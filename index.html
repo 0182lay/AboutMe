@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>AboutMe</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">DEV</div>
+        <ul class="menu">
+            <li><a href="#A1">HOME</a></li>
+            <li><a href="#B2">ABOUT</a></li>
+            <li><a href="#C3">SKILLS</a></li>
+            <li><a href="#D4">PROJECT</a></li>
+            <li><a href="#F5">CONTACT</a></li>
+        </ul>
+        <div class="version">v1.0.0</div>
+    </nav>
+    <main class="content">
+        <section id="A1" class="home"> <!-- section ແທັກທີ່ມີຄວາມໝາຍໄວ້ແບ່ງເນື່້ຫາ-->
+            <div class="In-home">
+                <span class="hi">HELLO, I'M</span>
+                <span class="myname">[LAY]</span>
+                <div class="ilike">
+                    <span>beginner_dev</span>
+                    <span>creative_designer</span>
+                    <span>gamer</span>
+                </div>
+                <div class="btn-group">
+                    <button class="btn primary" onclick="location.href='#D4'">
+                        VIEW PROJECT
+                    </button>
+                    <button class="btn outline" onclick="location.href='#F5'">
+                        GET IN TOUCH
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="B2" class="about">
+            <div class="about-header">
+                <div class="full-line"></div>
+                <div class="title-row">
+                    <span class="line"></span>
+                    <h2>ABOUT</h2>
+                    <span class="line"></span>
+                </div>
+                <p class="terminal">// player_info.init()</p>
+            </div>
+
+            <div class="about-content">
+
+                <!-- ซ้าย: รูป + LVL -->
+                <div class="left-section">
+                    <div class="image-circle">
+                        <img src="/image/myimage.jpeg" alt="My Photo">
+                    </div>
+                    <div class="level-info">
+                        <span class="lvl">LVL 1</span>
+                        <span class="beginner">BEGINNER</span>
+                    </div>
+                </div>
+
+                <!-- ขวา: ข้อความ + ปุ่ม Likes -->
+                <div class="right-section">
+                    <p class="P1">
+                        Hello, I’m Amnardpheutsapha Savady, 20 years old. I’m currently pursuing two bachelor’s
+                        degrees in Electronic Engineering (day) and Software Development (evening), exploring
+                        programming, graphic design, control systems, and web/app development.
+                    </p>
+                    <p class="P2">
+                        I see learning as a continuous journey, improving my technical and creative skills to grow as a
+                        well-rounded developer.
+                    </p>
+                    <div class="likes">
+                        <span class="btn-tag">Beginner Dev</span>
+                        <span class="btn-tag">Designer</span>
+                        <span class="btn-tag">Gamer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="C3" class="skills">
+            <!-- HEADER เหมือน ABOUT -->
+            <div class="skills-header">
+                <div class="full-line1"></div>
+                <div class="title-row2">
+                    <span class="line"></span>
+                    <h2>SKILLS</h2>
+                    <span class="line"></span>
+                </div>
+                <p class="terminal">// abilities.load()</p>
+            </div>
+            <div class="skills-content">
+
+                <div class="core-stats">
+                    <h3>CORE STATS</h3>
+
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width:50%"></div>
+                        </div>
+                        <span class="percent">50%</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width:50%"></div>
+                        </div>
+                        <span class="percent">50%</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width:30%"></div>
+                        </div>
+                        <span class="percent">30%</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>VUE</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width:20%"></div>
+                        </div>
+                        <span class="percent">20%</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>Design Sense</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width:75%"></div>
+                        </div>
+                        <span class="percent">75%</span>
+                    </div>
+                    <p class="note">* Honest self-assessment. Leveling up daily.</p>
+                </div>
+
+                <div class="equipped-tools">
+                    <h3>EQUIPPED TOOLS</h3>
+                    <div class="tool-badges">
+                        <span class="tool">VS Code</span>
+                        <span class="tool">Figma</span>
+                        <span class="tool">Git</span>
+                        <span class="tool">Chrome DevTools</span>
+                        <span class="tool">Photoshop</span>
+                    </div>
+                    <p class="current-grind">> Currently grinding: JavaScript, VUE.js, Tailwind CSS</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="D4" class="projects">
+            <div class="projects-header">
+                <div class="full-line"></div>
+                <div class="title-row">
+                    <span class="line"></span>
+                    <h2>PROJECTS</h2>
+                    <span class="line"></span>
+                </div>
+                <p class="terminal">// quest_log.display()</p>
+            </div>
+
+            <div class="projects-content">
+                <div class="project-card-small">
+                    <div class="project-header">
+                        <div class="project-image">
+                            <img src="/image/folderr.png" alt="Project Folder">
+                        </div>
+                        <span class="project-status">COMPLETE</span>
+                    </div>
+                    <div class="project-body">
+                        <h4 class="project-title">This Portfolio</h4>
+                        <p class="project-desc">
+                            My first project! A game-inspired portfolio built with HTML and CSS. You're looking at it
+                            right now.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <div class="project-line"></div>
+                    <div class="project-links">
+                        <a href="#" class="code-link">Code</a>
+                        <a href="#" class="live-link">Live</a>
+                    </div>
+                </div>
+                <div class="projects-content">
+                    <div class="project-card-small">
+                        <div class="project-header">
+                            <div class="project-image">
+                                <img src="/image/folderr.png" alt="Project Folder">
+                            </div>
+                            <span class="project-status">COMPLETE</span>
+                        </div>
+                        <div class="project-body">
+                            <h4 class="project-title">This Portfolio</h4>
+                            <p class="project-desc">
+                                My first project! A game-inspired portfolio built with HTML and CSS. You're looking at
+                                it
+                                right now.
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-line"></div>
+                        <div class="project-links">
+                            <a href="#" class="code-link">Code</a>
+                            <a href="#" class="live-link">Live</a>
+                        </div>
+                    </div>
+                    <div class="projects-content">
+                        <div class="project-card-small">
+                            <div class="project-header">
+                                <div class="project-image">
+                                    <img src="/image/folderr.png" alt="Project Folder">
+                                </div>
+                                <span class="project-status">COMPLETE</span>
+                            </div>
+                            <div class="project-body">
+                                <h4 class="project-title">This Portfolio</h4>
+                                <p class="project-desc">
+                                    My first project! A game-inspired portfolio built with HTML and CSS. You're looking
+                                    at it
+                                    right now.
+                                </p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <div class="project-line"></div>
+                            <div class="project-links">
+                                <a href="#" class="code-link">Code</a>
+                                <a href="#" class="live-link">Live</a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <section id="F5" class="contact">
+            <!-- HEADER -->
+            <div class="contact-header">
+                <div class="full-line"></div>
+                <div class="title-row">
+                    <span class="line"></span>
+                    <h2>CONTACT</h2>
+                    <span class="line"></span>
+                </div>
+                <p class="terminal">// connection.establish()</p>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="contact-content">
+                <h3>LET'S CONNECT</h3>
+                <p class="contact-desc">
+                    Open to conversations, learning, and exchanging ideas.
+                    If you’d like to connect, feel free to reach out!
+                </p>
+
+                <!-- CONTACT ITEMS -->
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <span class="label">GitHub</span>
+                        <a href="https://github.com/settings/profile" target="_blank" class="value">@yourname</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/%E0%BA%AD%E0%BB%8D%E0%BA%B2%E0%BA%99%E0%BA%B2%E0%BA%94%E0%BA%9E%E0%BA%B6%E0%BA%94%E0%BA%AA%E0%BA%B0%E0%BA%9E%E0%BA%B2-%E0%BA%8A%E0%BA%B2%E0%BA%A7%E0%BA%B0%E0%BA%94%E0%BA%B5-32a9b0388/" target="_blank" class="value">AmnardPheutsapha</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="label">Email</span>
+                        <a href="lay25yer@gmail.com" class="value">your@email.com</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+            <div class="contact-footer">
+                <p>Designed & Built with 💙 by <span>[YOUR_NAME]</span></p>
+                <p>© 2026 | First GitHub Project</p>
+            </div>
+        </section>
+
+</body>
+
+</html>

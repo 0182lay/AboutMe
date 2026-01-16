@@ -1,0 +1,156 @@
+
+section.about {
+    min-height: 100vh;
+    background-color: #1f1f1f;
+    padding: 60px 20px;
+}
+
+
+.about-header {
+    width: 100%;                  
+    display: flex;
+    flex-direction: column;       
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 100px;
+
+}
+
+
+.full-line {
+    width: 100%;                  
+    height: 1px;
+    background: linear-gradient(to right, transparent, #01ccff, transparent);
+}
+
+
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.title-row h2 {
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+.title-row .line {
+    width: 60px;
+    height: 2px;
+}
+
+.title-row .line:first-child {
+    background: linear-gradient(to right, transparent, #01ccff);
+}
+
+.title-row .line:last-child {
+    background: linear-gradient(to left, transparent, #01ccff);
+}
+
+
+.about-content {
+    display: flex;               
+    align-items: flex-start;      
+    justify-content: center;      
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;     
+    padding: 0 100px;        
+}
+
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.image-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #01ccff;
+    box-shadow: 0 0 20px #01ccff;
+}
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.level-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.level-info .lvl {
+    font-size: 12px;
+    font-weight: bold;
+    color: #01ccff;
+}
+
+.level-info .beginner {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;                  
+}
+
+
+.P1 {
+    color: #ffffff;
+    line-height: 1.6;
+}
+.P2 {
+    color: #5b5a5a;
+    line-height: 1.6;
+}
+
+.likes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.btn-tag {
+    background: #6366f1;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.btn-tag:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;   
+        align-items: center;
+    }
+    .right-section {
+        width: 90%;               
+    }
+}

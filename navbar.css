@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('static/Orbitron-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NotoSansLao";
+    src: url('staticfontLao/NotoSansLao-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Orbitron", "NotoSansLao", sans-serif;
+    font-optical-sizing: auto;
+    background-color: rgb(71, 71, 71);
+}
+button{
+    font-family: "Orbitron", "NotoSansLao", sans-serif;
+    font-optical-sizing: auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    backdrop-filter: blur(10px);          
+    -webkit-backdrop-filter: blur(10px);  
+    border: 1px solid rgb(86, 86, 86);
+
+    position: fixed;/*ອົງປະກອບຈະຕິດຢູ່ກັບຂອບບໍ່ເລື່ອນໄປກັບເມົ້າ*/
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+
+}
+.version{
+    color: rgb(110, 110, 110);
+}
