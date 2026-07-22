@@ -13,15 +13,20 @@ section.home {
 
 }
 
+.In-home {
+    padding: 0 16px;
+    max-width: 100%;
+}
+
 .In-home .hi {
-    font-size: 80px;
+    font-size: clamp(38px, 11vw, 80px);
     color: rgb(255, 255, 255);
     display: block;
-    line-height: 1;
+    line-height: 1.25;
 }
 
 .In-home .myname {
-    font-size: 80px;
+    font-size: clamp(38px, 11vw, 80px);
     color: aqua;
     display: block;
     line-height: 1;
@@ -42,7 +47,7 @@ section.home {
     display: flex;
 }
 .myname {
-    font-size: 80px;
+    font-size: clamp(38px, 11vw, 80px);
     color: aqua;
     display: block;
     line-height: 1;
@@ -69,6 +74,7 @@ section.home {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .ilike span {
@@ -128,4 +134,25 @@ section.home {
     font-family: monospace;
     font-size: 14px;
     color: #01ccff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .ilike {
+        gap: 12px;
+        font-size: 13px;
+    }
+    .ilike span {
+        padding-right: 12px;
+    }
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+        max-width: 260px;
+        padding: 12px 24px;
+    }
 }

@@ -7,9 +7,26 @@
 
 @font-face {
     font-family: "NotoSansLao";
-    src: url('staticfontLao/NotoSansLao-SemiBold.ttf') format('truetype');
-    font-weight: normal;
+    src: url('staticfontLao/NotoSansLao-Thin.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NotoSansLao";
+    src: url('staticfontLao/NotoSansLao-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NotoSansLao";
+    src: url('staticfontLao/NotoSansLao-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 html {
@@ -26,6 +43,7 @@ body {
     font-family: "Orbitron", "NotoSansLao", sans-serif;
     font-optical-sizing: auto;
     background-color: rgb(71, 71, 71);
+    overflow-x: hidden;
 }
 button{
     font-family: "Orbitron", "NotoSansLao", sans-serif;
@@ -49,4 +67,50 @@ button{
 }
 .version{
     color: rgb(110, 110, 110);
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 14px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 0;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu li {
+        margin-left: 18px;
+        font-size: 12px;
+    }
+    .version {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        display: none;
+    }
+    .menu li {
+        margin-left: 14px;
+    }
+}
+
+/* SECTION HEADERS ON SMALL SCREENS */
+@media (max-width: 480px) {
+    .title-row,
+    .title-row2 {
+        max-width: 100%;
+    }
+    .title-row .line,
+    .title-row2 .line {
+        width: 30px;
+    }
+    .title-row h2,
+    .title-row2 h2 {
+        font-size: 26px;
+    }
 }

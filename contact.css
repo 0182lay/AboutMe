@@ -90,7 +90,7 @@
 
 .contact-item .value {
     color: #fff;
-    font-family: monospace;
+    font-family: "Orbitron", "NotoSansLao", monospace;
     text-decoration: none;
 }
 
@@ -109,4 +109,16 @@
 .contact-item .value:hover {
     color: #01ccff;
     text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .contact-item .value {
+        word-break: break-all;
+    }
 }
